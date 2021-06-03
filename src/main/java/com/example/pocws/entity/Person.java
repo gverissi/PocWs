@@ -1,29 +1,62 @@
 package com.example.pocws.entity;
 
+import java.time.LocalDate;
+
 public class Person {
 
-    private String name;
-    private int age;
+    private Long id;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+    private String firstName;
+    private String lastName;
+    private String nationality;
+    private LocalDate birthday;
+
+    public Person() {
     }
 
-    public String getName() {
-        return name;
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Long getId() {
+        return id;
     }
 
-    public int getAge() {
-        return age;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
     }
 
 }
